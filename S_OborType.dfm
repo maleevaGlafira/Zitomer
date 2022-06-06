@@ -1,0 +1,752 @@
+inherited S_OborTypeF: TS_OborTypeF
+  Left = 92
+  Top = 170
+  Caption = 'S_OborTypeF'
+  ClientHeight = 533
+  ClientWidth = 1070
+  FormStyle = fsStayOnTop
+  OldCreateOrder = True
+  Visible = True
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Splitter2: TSplitter [0]
+    Left = 493
+    Top = 0
+    Height = 533
+    Align = alRight
+  end
+  inherited Panel1: TPanel
+    Width = 493
+    Height = 533
+    inherited DataGrid_dgr: TRxDBGrid
+      Width = 487
+      Height = 453
+      Constraints.MinHeight = 72
+      Constraints.MinWidth = 400
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'NAME_R'
+          Title.Caption = #1053#1072#1079#1074#1072#1085#1080#1077
+          Width = 197
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'look_differ'
+          Title.Caption = #1057#1083#1086#1078#1085#1086#1077
+          Width = 72
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'look_obortypeglobal'
+          Title.Caption = #1054#1073#1086#1073#1097#1105#1085#1085#1099#1081' '#1090#1080#1087
+          Width = 125
+          Visible = True
+        end>
+    end
+    inherited Panel2: TPanel
+      Top = 494
+      Width = 487
+      Constraints.MaxHeight = 36
+      Constraints.MinHeight = 36
+      object bb_Sostav: TBitBtn
+        Left = 376
+        Top = 8
+        Width = 89
+        Height = 25
+        Cancel = True
+        Caption = #1057#1086#1089#1090#1072#1074
+        TabOrder = 1
+        Visible = False
+        OnClick = bb_SostavClick
+      end
+    end
+    inherited Panel3: TPanel
+      Width = 487
+      Constraints.MaxHeight = 38
+      Constraints.MinHeight = 38
+    end
+  end
+  object Panel4: TPanel [2]
+    Left = 496
+    Top = 0
+    Width = 574
+    Height = 533
+    Align = alRight
+    Constraints.MinWidth = 300
+    TabOrder = 1
+    object Splitter1: TSplitter
+      Left = 1
+      Top = 263
+      Width = 572
+      Height = 3
+      Cursor = crVSplit
+      Align = alBottom
+    end
+    object p_Group: TPanel
+      Left = 1
+      Top = 266
+      Width = 572
+      Height = 266
+      Align = alBottom
+      TabOrder = 0
+      object Splitter3: TSplitter
+        Left = 289
+        Top = 1
+        Height = 228
+      end
+      object GroupGrid: TRxDBGrid
+        Left = 1
+        Top = 1
+        Width = 288
+        Height = 228
+        Align = alLeft
+        DataSource = ds_OborGroup
+        TabOrder = 0
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'MS Sans Serif'
+        TitleFont.Style = []
+        Columns = <
+          item
+            Expanded = False
+            FieldName = 'look_obortype'
+            Title.Caption = #1057#1086#1089#1090#1072#1074
+            Width = 196
+            Visible = True
+          end>
+      end
+      object Panel5: TPanel
+        Left = 1
+        Top = 229
+        Width = 570
+        Height = 36
+        Align = alBottom
+        TabOrder = 1
+        DesignSize = (
+          570
+          36)
+        object sb_Add: TSpeedButton
+          Left = 398
+          Top = 6
+          Width = 43
+          Height = 26
+          Hint = #1044#1086#1073#1072#1074#1080#1090#1100
+          Anchors = [akLeft, akBottom]
+          Flat = True
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            20000000000000040000120B0000120B00000000000000000000FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FBFBFB00EEEEEE00DADADA00CDCDCD00CDCDCD00DADA
+            DA00F2F2F200FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FBFBFB00E7E7E700C2C2C200A0A0A00097979700B0B0
+            B000DADADA00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00F9F9F900EEEEEE000000000000000000000000009696
+            9600CDCDCD00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FBFB
+            FB00EFEFEF00E1E1E100E1E1E100EBEBEB000000000000000000000000008787
+            8700A7A7A700CDCDCD00DADADA00F2F2F200FFFFFF00FFFFFF00FFFFFF00FCFC
+            FC00E8E8E800CBCBCB00C1C1C100D5D5D5000000000000000000000000008282
+            82008080800090909000B0B0B000DADADA00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FAFAFA000000000000000000000000000000000000000000000000000000
+            00000000000000000000A0A0A000CFCFCF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00313131001B1B1B00151515001313130000000000000000000000
+            00000000000000000000B3B3B300D5D5D500FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00878787008686860077777700555555001F1F1F00000000000606
+            06000505050000000000DCDCDC00E7E7E700FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00717171002525250000000000F5F5
+            F500FFFFFF00FFFFFF00FCFCFC00F8F8F800FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF007E7E7E003434340000000000E0E0
+            E000FAFAFA00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008D8D8D005858580000000000E6E6
+            E600F2F2F200FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FDFD
+            FD00FAFAFA00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00}
+          ParentShowHint = False
+          ShowHint = True
+          Visible = False
+          OnClick = sb_AddClick
+        end
+        object sb_Del: TSpeedButton
+          Left = 442
+          Top = 6
+          Width = 40
+          Height = 26
+          Hint = #1059#1076#1072#1083#1080#1090#1100
+          Anchors = [akLeft, akBottom]
+          Flat = True
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            20000000000000040000120B0000120B00000000000000000000FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FBFB
+            FB00F4F4F400E9E9E900DDDDDD00D7D7D700D4D4D400D4D4D400D4D4D400D4D4
+            D400D4D4D400D8D8D800E0E0E000EBEBEB00F6F6F600FDFDFD00FFFFFF00F6F6
+            F600DFDFDF00BBBBBB0096969600808080007777770077777700777777007777
+            7700797979008181810098989800BCBCBC00E1E1E100F7F7F700FFFFFF00F8F8
+            F800D3D3D300999999005D5D5D00404040004040400040404000404040004040
+            40004040400040404000484848007E7E7E00C2C2C200EEEEEE00FFFFFF00FFFF
+            FF00F4F4F40019191900121212000C0C0C000A0A0A0009090900090909000909
+            090009090900080808000909090071717100B6B6B600EAEAEA00FFFFFF00FFFF
+            FF00FFFFFF00505050002B2B2B00121212000101010000000000000000000000
+            00000000000000000000131313009C9C9C00C5C5C500EDEDED00FFFFFF00FFFF
+            FF00FFFFFF00939393009C9C9C00949494008C8C8C008C8C8C008C8C8C008B8B
+            8B007C7C7C005656560023232300E2E2E200E6E6E600F6F6F600FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFEFE00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00}
+          ParentShowHint = False
+          ShowHint = True
+          Visible = False
+          OnClick = sb_DelClick
+        end
+        object sb_Post: TSpeedButton
+          Left = 488
+          Top = 6
+          Width = 33
+          Height = 27
+          Hint = #1055#1086#1076#1090#1074#1077#1088#1076#1080#1090#1100
+          Anchors = [akLeft, akBottom]
+          Enabled = False
+          Glyph.Data = {
+            DE010000424DDE01000000000000760000002800000024000000120000000100
+            0400000000006801000000000000000000001000000000000000000000000000
+            80000080000000808000800000008000800080800000C0C0C000808080000000
+            FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+            3333333333333333333333330000333333333333333333333333F33333333333
+            00003333344333333333333333388F3333333333000033334224333333333333
+            338338F3333333330000333422224333333333333833338F3333333300003342
+            222224333333333383333338F3333333000034222A22224333333338F338F333
+            8F33333300003222A3A2224333333338F3838F338F33333300003A2A333A2224
+            33333338F83338F338F33333000033A33333A222433333338333338F338F3333
+            0000333333333A222433333333333338F338F33300003333333333A222433333
+            333333338F338F33000033333333333A222433333333333338F338F300003333
+            33333333A222433333333333338F338F00003333333333333A22433333333333
+            3338F38F000033333333333333A223333333333333338F830000333333333333
+            333A333333333333333338330000333333333333333333333333333333333333
+            0000}
+          NumGlyphs = 2
+          ParentShowHint = False
+          ShowHint = True
+          Visible = False
+          OnClick = sb_PostClick
+        end
+        object sb_cancel: TSpeedButton
+          Left = 524
+          Top = 6
+          Width = 33
+          Height = 27
+          Hint = #1054#1090#1084#1077#1085#1072
+          Anchors = [akLeft, akBottom]
+          Enabled = False
+          Glyph.Data = {
+            F6000000424DF600000000000000760000002800000010000000100000000100
+            0400000000008000000000000000000000001000000000000000000000000000
+            8000008000000080800080000000800080008080000080808000C0C0C0000000
+            FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00888888888888
+            8888888888888888888888808888888888088800088888888888880000888888
+            8088888000888888088888880008888008888888800088008888888888000008
+            8888888888800088888888888800000888888888800088008888888000088880
+            0888880000888888008888000888888888088888888888888888}
+          ParentShowHint = False
+          ShowHint = True
+          Visible = False
+          OnClick = sb_cancelClick
+        end
+        object dbn_Group: TDBNavigator
+          Left = 8
+          Top = 8
+          Width = 220
+          Height = 25
+          DataSource = ds_OborGroup
+          VisibleButtons = [nbInsert, nbDelete, nbPost, nbCancel]
+          Flat = True
+          TabOrder = 0
+        end
+      end
+      object ValueListEditor: TValueListEditor
+        Left = 292
+        Top = 1
+        Width = 279
+        Height = 228
+        TabStop = False
+        Align = alClient
+        Color = cl3DLight
+        Ctl3D = True
+        Enabled = False
+        ParentCtl3D = False
+        TabOrder = 2
+        TitleCaptions.Strings = (
+          #1055#1072#1088#1072#1084#1077#1090#1088
+          #1047#1085#1072#1095#1077#1085#1080#1077)
+        ColWidths = (
+          125
+          148)
+      end
+    end
+    object p_Params: TPanel
+      Left = 1
+      Top = 1
+      Width = 572
+      Height = 262
+      Align = alClient
+      TabOrder = 1
+      object Panel6: TPanel
+        Left = 1
+        Top = 230
+        Width = 570
+        Height = 31
+        Align = alBottom
+        TabOrder = 0
+        object bb_OK: TBitBtn
+          Left = 8
+          Top = 3
+          Width = 75
+          Height = 25
+          Cancel = True
+          Caption = 'OK'
+          TabOrder = 0
+          OnClick = bb_OKClick
+          Glyph.Data = {
+            DE010000424DDE01000000000000760000002800000024000000120000000100
+            0400000000006801000000000000000000001000000000000000000000000000
+            80000080000000808000800000008000800080800000C0C0C000808080000000
+            FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+            3333333333333333333333330000333333333333333333333333F33333333333
+            00003333344333333333333333388F3333333333000033334224333333333333
+            338338F3333333330000333422224333333333333833338F3333333300003342
+            222224333333333383333338F3333333000034222A22224333333338F338F333
+            8F33333300003222A3A2224333333338F3838F338F33333300003A2A333A2224
+            33333338F83338F338F33333000033A33333A222433333338333338F338F3333
+            0000333333333A222433333333333338F338F33300003333333333A222433333
+            333333338F338F33000033333333333A222433333333333338F338F300003333
+            33333333A222433333333333338F338F00003333333333333A22433333333333
+            3338F38F000033333333333333A223333333333333338F830000333333333333
+            333A333333333333333338330000333333333333333333333333333333333333
+            0000}
+          NumGlyphs = 2
+        end
+        object bb_Cancel: TBitBtn
+          Left = 304
+          Top = 3
+          Width = 75
+          Height = 25
+          Cancel = True
+          Caption = 'Cancel'
+          TabOrder = 1
+          OnClick = bb_CancelClick
+          Glyph.Data = {
+            36030000424D3603000000000000360000002800000010000000100000000100
+            18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFF5F5FFF7F7FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAEAEFCD6D6FDFFFFFFFFFFFF0101F4
+            0101F40101F49898FBF1F1FEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FF0101F4CDCDFDFFFFFFFFFFFF0101F40101F4C6C6FD0101F40101F40101F4CD
+            CDFDFFFFFFFFFFFFFFFFFFFFFFFF0101F40101F4F9F9FFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFF0101F40101F40101F40101F4F3F3FEFFFFFF0101F40101
+            F49595FAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF01
+            01F40101F45454F80101F40101F4C8C8FDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0101F40101F40101F41A1AF5F4F4FFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF4F4FFA7A7FB0101F401
+            01F46A6AF90101F40101F44646F7E8E8FEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFF9595FA0101F40101F40101F4FFFFFFFFFFFFFCFCFF0101F46666
+            F8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF9E9EFB0101F40101F40101F4FF
+            FFFFFFFFFFFFFFFFFFFFFF0101F45656F88D8DFAFFFFFFFFFFFFFFFFFFFFFFFF
+            E9E9FE4040F70101F40101F4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0101
+            F43C3CF7EAEAFEFFFFFFFFFFFFFFFFFF8484FA0101F40101F4FFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFF0101F40101F45D5DF8E3E3FEFFFFFF0101F4
+            0101F40101F4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FF0101F40101F4C6C6FDFFFFFF0101F4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0101F4FFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+        end
+        object btn_del: TBitBtn
+          Left = 224
+          Top = 3
+          Width = 75
+          Height = 25
+          Caption = 'Delete'
+          TabOrder = 2
+          OnClick = btn_delClick
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            20000000000000040000120B0000120B00000000000000000000FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FBFB
+            FB00F4F4F400E9E9E900DDDDDD00D7D7D700D4D4D400D4D4D400D4D4D400D4D4
+            D400D4D4D400D8D8D800E0E0E000EBEBEB00F6F6F600FDFDFD00FFFFFF00F6F6
+            F600DFDFDF00BBBBBB0096969600808080007777770077777700777777007777
+            7700797979008181810098989800BCBCBC00E1E1E100F7F7F700FFFFFF00F8F8
+            F800D3D3D300999999005D5D5D00404040004040400040404000404040004040
+            40004040400040404000484848007E7E7E00C2C2C200EEEEEE00FFFFFF00FFFF
+            FF00F4F4F40019191900121212000C0C0C000A0A0A0009090900090909000909
+            090009090900080808000909090071717100B6B6B600EAEAEA00FFFFFF00FFFF
+            FF00FFFFFF00505050002B2B2B00121212000101010000000000000000000000
+            00000000000000000000131313009C9C9C00C5C5C500EDEDED00FFFFFF00FFFF
+            FF00FFFFFF00939393009C9C9C00949494008C8C8C008C8C8C008C8C8C008B8B
+            8B007C7C7C005656560023232300E2E2E200E6E6E600F6F6F600FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFEFE00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00}
+        end
+        object btn_Edit: TBitBtn
+          Left = 88
+          Top = 3
+          Width = 75
+          Height = 25
+          Caption = 'Edit'
+          TabOrder = 3
+          Visible = False
+          OnClick = btn_EditClick
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            20000000000000040000120B0000120B00000000000000000000FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FBFBFB00EEEEEE00DADADA00CDCDCD00CDCDCD00DADA
+            DA00F2F2F200FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FBFBFB00E7E7E700C2C2C200A0A0A00097979700B0B0
+            B000DADADA00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00F9F9F900EEEEEE000000000000000000000000009696
+            9600CDCDCD00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FBFB
+            FB00EFEFEF00E1E1E100E1E1E100EBEBEB000000000000000000000000008787
+            8700A7A7A700CDCDCD00DADADA00F2F2F200FFFFFF00FFFFFF00FFFFFF00FCFC
+            FC00E8E8E800CBCBCB00C1C1C100D5D5D5000000000000000000000000008282
+            82008080800090909000B0B0B000DADADA00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FAFAFA000000000000000000000000000000000000000000000000000000
+            00000000000000000000A0A0A000CFCFCF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00313131001B1B1B00151515001313130000000000000000000000
+            00000000000000000000B3B3B300D5D5D500FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00878787008686860077777700555555001F1F1F00000000000606
+            06000505050000000000DCDCDC00E7E7E700FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00717171002525250000000000F5F5
+            F500FFFFFF00FFFFFF00FCFCFC00F8F8F800FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF007E7E7E003434340000000000E0E0
+            E000FAFAFA00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008D8D8D005858580000000000E6E6
+            E600F2F2F200FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FDFD
+            FD00FAFAFA00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+            FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00}
+        end
+      end
+      object dbg_Params: TRxDBGrid
+        Left = 1
+        Top = 1
+        Width = 570
+        Height = 229
+        Align = alClient
+        Constraints.MinHeight = 70
+        DataSource = ds_OborTypeParams
+        TabOrder = 1
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'MS Sans Serif'
+        TitleFont.Style = []
+        Columns = <
+          item
+            Expanded = False
+            FieldName = 'NAME_R'
+            ReadOnly = True
+            Title.Caption = #1055#1072#1088#1072#1084#1077#1090#1088
+            Width = 153
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'P_VALUE'
+            Title.Caption = #1047#1085#1072#1095#1077#1085#1080#1077
+            Width = 120
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'MEASURE'
+            ReadOnly = True
+            Title.Caption = #1077#1076'.'#1080#1079#1084'.'
+            Visible = True
+          end>
+      end
+    end
+  end
+  object dset_OborGroup: TIBDataSet
+    Database = DM_main.IBDatabase
+    Transaction = tran
+    AfterScroll = dset_OborGroupAfterScroll
+    BeforePost = dset_OborGroupBeforePost
+    DeleteSQL.Strings = (
+      'DELETE FROM S_obortypegroup'
+      'WHERE id = :OLD_ID')
+    InsertSQL.Strings = (
+      'INSERT INTO S_obortypegroup ( obortype, detail )'
+      'VALUES (:obortype, :detail)')
+    SelectSQL.Strings = (
+      'SELECT s.id, s.Obortype,  s.detail, s.del'
+      'FROM s_obortypegroup s, s_obortype so'
+      'WHERE (s.id > 0)'
+      'and (so.id = s.detail)'
+      'and ( so.del = '#39'-'#39' ) '
+      'and obortype = :obortype'
+      'ORDER BY s.Obortype')
+    ModifySQL.Strings = (
+      'UPDATE S_obortypegroup'
+      'SET  detail = :detail'
+      'WHERE id = :id')
+    GeneratorField.Field = 'ID'
+    GeneratorField.Generator = 'GEN_S_OBORTYPEGROUP'
+    GeneratorField.ApplyEvent = gamOnServer
+    Left = 514
+    Top = 381
+    object dset_OborGroupID: TIntegerField
+      FieldName = 'ID'
+      Origin = 'S_OBORTYPEGROUP.ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object dset_OborGroupOBORTYPE: TIntegerField
+      FieldName = 'OBORTYPE'
+      Origin = 'S_OBORTYPEGROUP.OBORTYPE'
+      Required = True
+    end
+    object dset_OborGroupDETAIL: TIntegerField
+      FieldName = 'DETAIL'
+      Origin = 'S_OBORTYPEGROUP.DETAIL'
+      Required = True
+    end
+    object dset_OborGroupDEL: TIBStringField
+      FieldName = 'DEL'
+      Origin = 'S_OBORTYPEGROUP.DEL'
+      FixedChar = True
+      Size = 1
+    end
+    object dset_OborGrouplook_obortype: TStringField
+      FieldKind = fkLookup
+      FieldName = 'look_obortype'
+      LookupDataSet = DM1.s_obortype_look
+      LookupKeyFields = 'ID'
+      LookupResultField = 'NAME_R'
+      KeyFields = 'DETAIL'
+      Size = 25
+      Lookup = True
+    end
+  end
+  object IBSQL: TIBSQL
+    Database = DM_main.IBDatabase
+    Transaction = tran
+    Left = 570
+    Top = 381
+  end
+  object tran: TIBTransaction
+    DefaultDatabase = DM_main.IBDatabase
+    Params.Strings = (
+      'read_committed'
+      'rec_version'
+      'nowait')
+    Left = 514
+    Top = 429
+  end
+  object ds_OborGroup: TDataSource
+    DataSet = dset_OborGroup
+    Left = 570
+    Top = 429
+  end
+  object dset_OborTypeParams: TIBDataSet
+    Database = DM_main.IBDatabase
+    Transaction = tran
+    AfterInsert = dset_OborTypeParamsAfterInsert
+    BeforeEdit = dset_OborTypeParamsBeforeEdit
+    BeforePost = dset_OborTypeParamsBeforePost
+    DeleteSQL.Strings = (
+      'delete from s_ot_params where id = :id')
+    InsertSQL.Strings = (
+      'INSERT INTO s_ot_params ( id_obortype, id_field , p_value)'
+      'VALUES (:id_obortype, :sof_id, :p_value)')
+    RefreshSQL.Strings = (
+      'select sp.id'
+      '      ,sof.name_r'
+      '      , sp.id_obortype'
+      '      , sp.id_field'
+      '      , sof.id sof_id'
+      '      , sp.p_value'
+      '      ,sof.measure'
+      'from  s_otglob_fields sof'
+      
+        'join s_obortype so on (so.id_obortypeglob = sof.id_otg and so.id' +
+        ' = :pid and  sof.del = '#39'-'#39')'
+      
+        'left join s_ot_params sp on (sp.id_field = sof.id and sp.id_obor' +
+        'type = so.id)'
+      'order by 2')
+    SelectSQL.Strings = (
+      'select sp.id'
+      '      ,sof.name_r'
+      '      , sp.id_obortype'
+      '      , sp.id_field'
+      '      , sof.id sof_id'
+      '      , sp.p_value'
+      '      ,sof.measure'
+      'from  s_otglob_fields sof'
+      
+        'join s_obortype so on (so.id_obortypeglob = sof.id_otg and so.id' +
+        ' = :pid and  sof.del = '#39'-'#39')'
+      
+        'left join s_ot_params sp on (sp.id_field = sof.id and sp.id_obor' +
+        'type = so.id)'
+      'order by 2')
+    ModifySQL.Strings = (
+      'UPDATE s_ot_params'
+      'SET  id_obortype = :id_obortype'
+      '   , id_field =:sof_id'
+      '   ,p_value =:p_value'
+      'WHERE id = :id')
+    GeneratorField.Field = 'ID'
+    GeneratorField.Generator = 'GEN_S_OT_PARAMS'
+    GeneratorField.ApplyEvent = gamOnServer
+    Left = 538
+    Top = 133
+    object dset_OborTypeParamsID: TIntegerField
+      FieldName = 'ID'
+      Origin = 'S_OT_PARAMS.ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object dset_OborTypeParamsNAME_R: TIBStringField
+      FieldName = 'NAME_R'
+      Origin = 'S_OTGLOB_FIELDS.NAME_R'
+      Size = 32
+    end
+    object dset_OborTypeParamsP_VALUE: TIBStringField
+      FieldName = 'P_VALUE'
+      Origin = 'S_OT_PARAMS.P_VALUE'
+      Size = 255
+    end
+    object dset_OborTypeParamsMEASURE: TIBStringField
+      FieldName = 'MEASURE'
+      Origin = 'S_OTGLOB_FIELDS.MEASURE'
+      Size = 10
+    end
+    object dset_OborTypeParamsID_OBORTYPE: TIntegerField
+      FieldName = 'ID_OBORTYPE'
+      Origin = 'S_OT_PARAMS.ID_OBORTYPE'
+    end
+    object dset_OborTypeParamsID_FIELD: TIntegerField
+      FieldName = 'ID_FIELD'
+      Origin = 'S_OT_PARAMS.ID_FIELD'
+    end
+    object dset_OborTypeParamsSOF_ID: TIntegerField
+      FieldName = 'SOF_ID'
+      Origin = 'S_OTGLOB_FIELDS.ID'
+      Required = True
+    end
+  end
+  object ds_OborTypeParams: TDataSource
+    DataSet = dset_OborTypeParams
+    Left = 538
+    Top = 173
+  end
+  object IBScript: TIBScript
+    Database = DM_main.IBDatabase
+    Transaction = tran
+    Terminator = ';'
+    Left = 577
+    Top = 137
+  end
+  object dset_ParamLook: TIBDataSet
+    Database = DM_main.IBDatabase
+    Transaction = tran
+    AfterInsert = dset_OborTypeParamsAfterInsert
+    BeforeEdit = dset_OborTypeParamsBeforeEdit
+    BeforePost = dset_OborTypeParamsBeforePost
+    SelectSQL.Strings = (
+      'select'
+      '       (rtrim(sof.name_r)||'#39', '#39'||rtrim(sof.measure)) p_param'
+      '      , sp.p_value'
+      'from  s_otglob_fields sof'
+      
+        'join s_obortype so on (so.id_obortypeglob = sof.id_otg and so.id' +
+        ' = :pid and  sof.del = '#39'-'#39')'
+      
+        'left join s_ot_params sp on (sp.id_field = sof.id and sp.id_obor' +
+        'type = so.id)'
+      'order by 2')
+    GeneratorField.Field = 'ID'
+    GeneratorField.Generator = 'GEN_S_OT_PARAMS'
+    GeneratorField.ApplyEvent = gamOnServer
+    Left = 818
+    Top = 341
+    object dset_ParamLookP_PARAM: TIBStringField
+      FieldName = 'P_PARAM'
+      ProviderFlags = []
+      Size = 162
+    end
+    object dset_ParamLookP_VALUE: TIBStringField
+      FieldName = 'P_VALUE'
+      Origin = 'S_OT_PARAMS.P_VALUE'
+      Size = 255
+    end
+  end
+  object ds_ParamLook: TDataSource
+    DataSet = dset_ParamLook
+    Left = 826
+    Top = 381
+  end
+  object dset_tmp: TIBQuery
+    Database = DM_main.IBDatabase
+    Transaction = tran
+    Left = 689
+    Top = 153
+  end
+  object tran_exec: TIBTransaction
+    DefaultDatabase = DM_main.IBDatabase
+    Left = 649
+    Top = 153
+  end
+end

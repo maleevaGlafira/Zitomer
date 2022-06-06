@@ -1,0 +1,2 @@
+inherited dm_WorkContainerPlan: Tdm_WorkContainerPlan
+end

@@ -1,0 +1,23 @@
+[Main]
+NmNomer=z.nomer
+Имя поля для которого берется условие "Номер"
+Имеет смысл при isNomer=1
+DtMin=dt_in
+Имя поля для которого берется условие "Дата с"
+Имеет смысл при isData=1
+
+DtMax=dt_in
+Имя поля для которого берется условие "Дата по"
+Имеет смысл при isData=1
+
+Dt_DB=z
+Алиас базы данных для условий-дат
+
+Spis=diam;dop_inf;mater;n_dom;revs;soder;tzav;ulica;place;work
+Список подключаемых файлов *.prs
+RunSQL=select z.id,z.id_ul1,z.id_ul2,z.kod_ul,z.dop_adr,z.nomer pole0,z.fyear pole1,z.dt_in pole2 from zavjav z where (delz=0) and id>0 
+RunTit=Номер;Год;Дат.пост.;Адрес
+RunAdres=3
+isNomer=1
+isData=1
+Name=Проба

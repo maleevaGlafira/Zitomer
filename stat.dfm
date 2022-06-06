@@ -1,0 +1,89 @@
+object FormStatus: TFormStatus
+  Left = 305
+  Top = 203
+  AutoSize = True
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'FormStatus'
+  ClientHeight = 129
+  ClientWidth = 109
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  Scaled = False
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnMouseMove = FormMouseMove
+  PixelsPerInch = 96
+  TextHeight = 16
+  object Pn: TPanel
+    Left = 0
+    Top = 0
+    Width = 109
+    Height = 129
+    BevelInner = bvLowered
+    BorderWidth = 1
+    BorderStyle = bsSingle
+    Caption = 'Pn'
+    TabOrder = 0
+    OnMouseMove = FormMouseMove
+    object Lb_ln: TRxLabel
+      Left = 3
+      Top = 102
+      Width = 6
+      Height = 16
+      Color = clBtnFace
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clNavy
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      OnMouseMove = FormMouseMove
+    end
+    object Lb_dt: TRxLabel
+      Left = 40
+      Top = 104
+      Width = 5
+      Height = 16
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      OnMouseMove = FormMouseMove
+    end
+    object Clock: TRxClock
+      Left = 3
+      Top = 3
+      Width = 99
+      Height = 99
+      BevelOuter = bvLowered
+      DotsColor = clBlack
+      ShowMode = scAnalog
+      Align = alTop
+      BorderStyle = bsSingle
+      FullRepaint = False
+      Color = clMoneyGreen
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      OnMouseMove = FormMouseMove
+    end
+  end
+  object Tm: TTimer
+    OnTimer = TmTimer
+    Left = 62
+    Top = 42
+  end
+end

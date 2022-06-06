@@ -1,0 +1,7 @@
+[Main]
+SQLStr=select d.id,cast(d.diam as char(4)) diam from s_diam d order by d.diam
+MainSQlStr=and id_diam in (select id from s_diam where #)
+n_field=id
+DbName=DBN_AVAR
+Text=Діаметр(наряд)
+L_field=diam

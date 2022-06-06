@@ -1,0 +1,8 @@
+[Main]
+SQLStr=select r.id id,r.name_r name_r from s_rayon r order by 2
+MainSQlStr=and (id_rayon in (select id from s_rayon where #))
+n_field=id
+DbName=DBN_AVAR
+L_field=name_r
+Like_field=r.name_r
+Text=Місто/селище

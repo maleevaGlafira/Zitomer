@@ -1,0 +1,8 @@
+[Main]
+SQLStr=select rv.id id,rv.name_r name_r from s_revs rv order by 2
+MainSQlStr=and (id_revs in (select id from s_revs where #))
+n_field=id
+DbName=DBN_AVAR
+L_field=name_r
+Like_field=rv.name_r
+Text=Ділянка

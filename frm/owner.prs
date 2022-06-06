@@ -1,0 +1,8 @@
+[Main]
+SQLStr=select id,name_r from s_owner order by name_r
+MainSQlStr=and id_alien in (select id from s_owner where #)
+n_field=id
+DbName=DBN_AVAR
+L_field=name_r
+Text=Вид наряду
+

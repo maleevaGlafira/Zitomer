@@ -1,0 +1,9 @@
+[Main]
+SQLStr=select u.id id,u.name_r||' '||v.name_r name_r from s_ulic u join s_vidul v on (u.id_vidul=v.id) order by 2
+1SQLStr=select u.id id,u.name_r||" "||v.name_r||" "||cast(u.id as char(9)) name_r,u.orint  from s_ulic u,s_vidul v where u.id_vidul=v.id order by 2
+MainSQlStr=and (id_ul1 in (select id from s_ulic where # ) or (kod_ul=1 and id_ul2 in (select cast(id as char(8)) from s_ulic where # )))
+n_field=id
+DbName=DBN_AVAR
+L_field=name_r
+Like_field=u.name_r
+Text=¬улиц€

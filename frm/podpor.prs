@@ -1,0 +1,7 @@
+[Main]
+SQLStr=select id,name name from s_podpor where id>0 order by name
+MainSQlStr=and z.id_PODPOR in (select id from s_podpor where #)
+n_field=id
+DbName=DBN_AVAR
+L_field=name
+Text=Подпор

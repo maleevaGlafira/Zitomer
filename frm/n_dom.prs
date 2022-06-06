@@ -1,0 +1,6 @@
+[Main]
+isLike=0
+isUpper=1
+MainSQlStr=and (kod_ul=0 and (#))
+L_field=id_ul2
+Text=Номер буд.

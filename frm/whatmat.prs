@@ -1,0 +1,7 @@
+[Main]
+SQLStr=select id,name_r from s_sod order by name_r
+MainSQlStr=and id_comment in (select id from s_sod where #)
+n_field=id
+DbName=DBN_AVAR
+L_field=name_r
+Text=Про що заявлено

@@ -1,0 +1,7 @@
+[Main]
+SQLStr=select id,name_r name_r from s_attach where id>0 order by name_r
+MainSQlStr=and z.id_attach in (select id from s_attach where #)
+n_field=id
+DbName=DBN_AVAR
+L_field=name_r
+Text=Належність

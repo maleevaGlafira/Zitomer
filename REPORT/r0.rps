@@ -1,0 +1,85 @@
+.insert
+                         ÑÂÎÄÊÀ ÇÀÊĞÛÒÛÕ ÇÀßÂÎÊ
+        çà ïåğèîä ñ @0  @1 ïî @2  @3
+.overwrite
++--------------+---------+-------------------------------+------+-------+
+¦    Ğàéîí     ¦         ¦         Ï Î Ë Î Ì Ê È         ¦      ¦       ¦
+¦              ¦Çàñîğåíèå+-------+------+--------+-------+Ïğî÷èå¦ ÈÒÎÃÎ ¦
+¦              ¦         ¦Òğåùèíà¦ Ñòûê ¦Êîğğîçèÿ¦ Âñåãî ¦      ¦       ¦
++--------------+---------+-------+------+--------+-------+------+-------+
+.eval @4 0
+.eval @5 0
+.eval @6 0
+.eval @7 0
+.eval @8 0
+.eval @9 0
+.eval @10 0
+.select
+   select id,name_r
+   from s_revs
+   where del='-' and id>-1
+   order by id
+.for
+   .select
+      select count(*)
+      from zavjav
+      where (delz=0) and dt_out>='@0 @1' and dt_out<='@2 @3'
+        and id_revs=#0 /*and id_damg=8*/ and id_tzav=2
+   .for
+     .eval @14 #0
+   .end
+   .select
+      select count(*)
+      from zavjav
+      where (delz=0) and dt_out>='@0 @1' and dt_out<='@2 @3'
+        and id_revs=#0 and id_damg=12 and id_tzav=1
+   .for
+     .eval @15 #0
+   .end
+   .select
+      select count(*)
+      from zavjav
+      where (delz=0) and dt_out>='@0 @1' and dt_out<='@2 @3'
+        and id_revs=#0 and id_damg=11 and id_tzav=1
+   .for
+     .eval @16 #0
+   .end
+   .select
+      select count(*)
+      from zavjav
+      where (delz=0) and dt_out>='@0 @1' and dt_out<='@2 @3'
+        and id_revs=#0 and id_damg=9 and id_tzav=1
+   .for
+     .eval @17 #0
+   .end
+   .select
+      select count(*)
+      from zavjav
+      where (delz=0) and dt_out>='@0 @1' and dt_out<='@2 @3'
+        and id_revs=#0 /*and id_damg=6*/ and id_tzav=3
+   .for
+     .eval @19 #0
+   .end
+   .eval @18 @15 @16 + @17 +  
+   .eval @20 @14 @18 + @19 +  
+¦#(14)1        ¦@14      ¦@15    ¦@16   ¦@17     ¦@18    ¦@19   ¦@20    ¦
+.eval @4 @4 @14 +
+.eval @5 @5 @15 +
+.eval @6 @6 @16 +
+.eval @7 @7 @17 +
+.eval @8 @8 @18 +
+.eval @9 @9 @19 +
+.eval @10 @10 @20 +
+.end
++--------------+---------+-------+------+--------+-------+------+-------+
+¦ÈÒÎÃÎ         ¦@4       ¦@5     ¦@6    ¦@7      ¦@8     ¦@9    ¦@10    ¦
++--------------+---------+-------+------+--------+-------+------+-------+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+.if #9 '0' =
+  .eval @7 #5 ' ' || #4 || ', ' || #6 || ' ' 25 rpad #10 || trim
+.end
+.if #9 '1' =
+  .eval @7 ''
+  .select 
+    select u.name_r,v.name_r
+    from s_ulic u,s_vidul v
+    where u.id='#6' and u.id_vidul=v.id
+  .for
+    .eval @7 #1 ' ' || #0 ||
+  .end
+  .eval @7 #5 ' ' || #4 || ' ' 25 rpad 1 25 copy '>' || @7 ' ' 24 rpad 1 25 copy || #10 || trim
+.end
+.if #9 '2' =
+  .eval @7 #5 ' ' || #4 || ' ' 25 rpad 1 25 copy #10 || trim
+.end

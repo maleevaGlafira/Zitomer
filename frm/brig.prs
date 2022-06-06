@@ -1,0 +1,7 @@
+[Main]
+SQLStr=select id,name_r||' '||dolgn name_r from s_brig where id>0 order by name_r
+MainSQlStr=and z.id in (select id_zav from narad where id_brig in (select id from s_brig where #))
+n_field=id
+DbName=DBN_AVAR
+L_field=name_r
+Text=Бригадир

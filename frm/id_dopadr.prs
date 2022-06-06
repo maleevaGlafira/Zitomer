@@ -1,0 +1,9 @@
+[Main]
+SQLStr=select id,name_r from S_DOPADRES
+MainSQlStr=and ID_DOPADRES in (select id from S_DOPADRES where #)
+n_field=id
+DbName=DBN_AVAR
+L_field=name_r
+Text=місцевість
+;RelTo=id;s_work;select w.id,w.name_r||' - '||p.name_r name_r from s_work w,s_place p where w.ftype=p.id and w.ftype=#
+;//select id,name_r from s_work where ftype=#

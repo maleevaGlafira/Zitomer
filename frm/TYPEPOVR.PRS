@@ -1,0 +1,8 @@
+[Main]
+SQLStr=select id,name_r from s_damg 
+MainSQlStr=and id_damg in (select id from s_damg where #)
+n_field=id
+DbName=DBN_AVAR
+L_field=name_r
+Text=Тип пошкодження
+

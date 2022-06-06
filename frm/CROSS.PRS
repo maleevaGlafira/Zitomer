@@ -1,0 +1,7 @@
+[Main]
+SQLStr=select id,name_r from s_ulic order by 2
+MainSQlStr=and kod_ul=1 and id_ul2 in (select cast(id as char(8)) from s_ulic where #)
+n_field=id
+DbName=DBN_AVAR
+L_field=name_r
+Text=Перехрестя с

@@ -1,0 +1,4 @@
+[Main]
+MainSQlStr=and (#)
+L_field=dop_adr
+Text=Дод.адреса

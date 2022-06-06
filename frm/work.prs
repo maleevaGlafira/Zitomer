@@ -1,0 +1,10 @@
+[Main]
+SQLStr=select w.id  ,w.name_r||' - '||p.name_r name_r from s_work w,s_place p where w.ftype=p.id
+;MainSQlStr=and z.id in (select id_zav from works where id_work in (select id from s_work where #))
+MainSQlStr=and (#)
+n_field=id
+DbName=DBN_AVAR
+L_field=name_r
+Like_field=w.name_r
+Text=Роботи
+SQLField=sw.id
